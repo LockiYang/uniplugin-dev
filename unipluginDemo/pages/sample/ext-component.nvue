@@ -4,21 +4,19 @@
 	</div>
 </template>
 
-<script>  
-    export default {  
-        data() {  
-            return {  
-            }  
-        },  
-        onLoad() {  
-        },  
-        methods: {  
+<script>
+	export default {
+		data() {
+			return {}
+		},
+		onLoad() {},
+		methods: {
 			onTel(e) {
-				console.log("onTel="+e.detail.tel);
+				console.log("onTel=" + e.detail.tel);
 			},
 			myTextClick(e) {
 				this.$refs.telText.clearTel();
 			}
-        }  
-    }  
-</script>  
+		}
+	}
+</script>

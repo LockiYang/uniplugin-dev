@@ -7,6 +7,12 @@
 			}
 		},
 		{
+			"path": "pages/sample/oaid-module",
+			"style": {
+				"navigationBarTitleText": "获取OAID"
+			}
+		},
+		{
 			"path": "pages/sample/ext-module",
 			"style": {
 				"navigationBarTitleText": "扩展 module"

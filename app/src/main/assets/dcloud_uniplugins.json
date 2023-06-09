@@ -4,6 +4,15 @@
       "plugins": [
         {
           "type": "module",
+          "name": "OAIDModule",
+          "class": "io.dcloud.uniplugin.OAIDModule"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "module",
           "name": "TestModule",
           "class": "io.dcloud.uniplugin.TestModule"
         }

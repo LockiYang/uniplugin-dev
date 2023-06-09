@@ -1,0 +1,34 @@
+<template>
+	<div>
+		<button type="primary" @click="testGetOAID">测试获取OAID</button>
+		<button type="primary" @click="testGetOAIDAsync">测试获取OAID异步</button>
+	</div>
+</template>
+
+<script>
+	// 获取 module 
+	var oaidModule = uni.requireNativePlugin("OAIDModule");
+	const modal = uni.requireNativePlugin('modal');
+	export default {
+		methods: {
+			testGetOAIDAsync() {
+				// 调用异步方法
+				oaidModule.getOAIDAsync(
+					(ret) => {
+						modal.toast({
+							message: ret,
+							duration: 5
+						});
+					})
+			},
+			testGetOAID() {
+				// 调用同步方法
+				var ret = oaidModule.getOAID();
+				modal.toast({
+					message: ret,
+					duration: 5
+				});
+			}
+		}
+	}
+</script>
