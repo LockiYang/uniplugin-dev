@@ -12,9 +12,9 @@
 	const modal = uni.requireNativePlugin('modal');
 	export default {
 		onLoad() {
-			plus.globalEvent.addEventListener('TestEvent', function(e){
+			plus.globalEvent.addEventListener('TestEvent', function(e) {
 				modal.toast({
-					message: "TestEvent收到："+e.msg,
+					message: "TestEvent收到：" + e.msg,
 					duration: 1.5
 				});
 			});

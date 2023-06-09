@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/uniplugin_component" />
             <option value="$PROJECT_DIR$/uniplugin_module" />
+            <option value="$PROJECT_DIR$/uniplugin_oaid" />
             <option value="$PROJECT_DIR$/uniplugin_richalert" />
           </set>
         </option>

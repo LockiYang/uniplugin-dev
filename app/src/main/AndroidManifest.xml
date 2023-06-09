@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.android.UniPlugin">
+    package="com.yirrtech.demo">
 
     <supports-screens
         android:anyDensity="true"
@@ -83,7 +83,7 @@
         </activity>
         <meta-data
             android:name="dcloud_appkey"
-            android:value="开发者需登录https://dev.dcloud.net.cn/申请签名" />
+            android:value="04f9ff033909981260c9a06cfb2baa56" />
     </application>
 
 </manifest>
