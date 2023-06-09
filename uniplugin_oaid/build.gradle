@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+
+    compileOnly fileTree(dir: '../app/libs', include: ['uniapp-v8-release.aar'])
+
+    compileOnly 'androidx.recyclerview:recyclerview:1.0.0'
+    compileOnly 'androidx.legacy:legacy-support-v4:1.0.0'
+    compileOnly 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.alibaba:fastjson:1.2.83'
+    implementation 'com.facebook.fresco:fresco:1.13.0'
+
+    implementation 'com.github.gzu-liyujiang:Android_CN_OAID:4.2.4'
+//    implementation 'com.github.gzu-liyujiang.Android_CN_OAID:OAID_ASUS:3.0.3' //华硕
+//    implementation 'com.github.gzu-liyujiang.Android_CN_OAID:OAID_BUN:3.0.3' //中兴、卓易
+//    implementation 'com.github.gzu-liyujiang.Android_CN_OAID:OAID_ZUI:3.0.3' //联想、摩托罗拉
+//    implementation 'com.github.gzu-liyujiang.Android_CN_OAID:OAID_SAMSUNG:3.0.3' //三星
+//    implementation 'com.github.gzu-liyujiang.Android_CN_OAID:OAID_HEYTAP:3.0.3' //欧珀、一加
+//    implementation 'com.github.gzu-liyujiang.Android_CN_OAID:OAID_UODIS:3.0.3' //华为
+//    implementation 'com.github.gzu-liyujiang.Android_CN_OAID:OAID_IMPL:3.0.3' //具体实现
+//    implementation 'androidx.annotation:annotation:1.1.0'
+}
